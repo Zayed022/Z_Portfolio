@@ -15,7 +15,7 @@ export default function Hero() {
         Hi, I’m <span className="text-white">Mohd Zayed Ansari</span>
         <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-          I build beautiful, scalable digital experiences.
+          I build optimize, scalable digital experiences.
         </span>
       </motion.h1>
 
