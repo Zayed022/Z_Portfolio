@@ -1,27 +1,63 @@
 import { motion } from "framer-motion";
-import { Code2, Server, Wrench } from "lucide-react";
+import { Code2, Server, Wrench, Cloud } from "lucide-react";
 
 const skillGroups = [
   {
-    icon: <Code2 size={26} className="text-cyan-400" />,
-    title: "Frontend Development",
-    skills: ["React.js", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS", "HTML5 / CSS3", "Responsive UI / UX"],
+    icon: <Code2 size={28} className="text-cyan-400" />,
+    title: "Frontend Engineering",
+    skills: [
+      "React.js",
+      "Next.js",
+      "React Native",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Redux",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+      "Responsive UI / UX",
+    ],
   },
   {
-    icon: <Server size={26} className="text-blue-400" />,
-    title: "Backend Development",
-    skills: ["Node.js", "Express.js", "REST APIs", "Authentication", "Database Design", "Server-Side Logic"],
+    icon: <Server size={28} className="text-blue-400" />,
+    title: "Backend & Systems",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "WebSockets (Real-time)",
+      "Authentication (JWT, OAuth)",
+      "Database Design",
+      "System Design",
+      "API Architecture",
+      "Scalable Backend Systems",
+    ],
   },
   {
-    icon: <Wrench size={26} className="text-purple-400" />,
-    title: "Tools & Technologies",
+    icon: <Cloud size={28} className="text-indigo-400" />,
+    title: "DevOps & Cloud",
+    skills: [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "CI/CD Pipelines",
+      "Nginx",
+      "Deployment (Vercel / Netlify)",
+      "Load Balancing",
+      "Caching Strategies",
+    ],
+  },
+  {
+    icon: <Wrench size={28} className="text-purple-400" />,
+    title: "Tools & Workflow",
     skills: [
       "Git / GitHub",
-      "MongoDB / MySQL",
-      "Vite / Webpack",
+      "MongoDB / MySQL / Supabase",
       "Postman",
+      "Jira",
+      "Figma",
+      "VS Code",
       "NPM / Yarn",
-      "Deployment (Vercel / Netlify)",
+      "Vite / Webpack",
     ],
   },
 ];
@@ -37,7 +73,7 @@ export default function TechnicalExpertise() {
         Technical Expertise
       </motion.h2>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {skillGroups.map((group, index) => (
           <motion.div
             key={index}
@@ -47,14 +83,19 @@ export default function TechnicalExpertise() {
             viewport={{ once: true }}
             className="backdrop-blur-lg bg-white/5 border border-white/10 hover:border-blue-400/40 hover:shadow-blue-400/20 hover:shadow-xl rounded-2xl p-7 transition-all"
           >
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-5">
               {group.icon}
-              <h3 className="text-3xl font-semibold">{group.title}</h3>
+              <h3 className="text-2xl font-semibold">
+                {group.title}
+              </h3>
             </div>
 
-            <ul className="space-y-1 text-gray-300 text-xl">
+            <ul className="space-y-2 text-gray-300 text-lg leading-relaxed">
               {group.skills.map((skill, idx) => (
-                <li key={idx} className="hover:text-white transition-colors">
+                <li
+                  key={idx}
+                  className="hover:text-white transition-colors"
+                >
                   • {skill}
                 </li>
               ))}

@@ -4,6 +4,9 @@ import SK from "../assets/SK.jpg"
 import Ad from "../assets/Ad.jpg"
 import AI from "../assets/AI.png"
 import AI2 from "../assets/AI2.png"
+import Alexis from "../assets/Alexis.png"
+import Raadii from "../assets/Raadii.png"
+import Finderzz from "../assets/Finderzz.png"
 
 const projects = [
   {
@@ -13,12 +16,21 @@ const projects = [
     live: "https://www.grokartapp.com/",
   },
   {
-    title: "SK Reality",
-    description: "A website of a construction firm in Lonavala.",
-    image: SK ,
-    github: "https://github.com/Zayed022/BuildStrong",
-    live: "https://skrealityconstruction.com/",
+    title: "Finderzz - A Urban company like mobile app.",
+    description: "A mobile app(Client) that provides various services like Urban Company",
+    image: Finderzz ,
+    github: "https://github.com/Zayed022/Finderzz---Home-Services-Delivered",
+    live: "https://play.google.com/store/apps/details?id=com.finderzz.userapp&pcampaignid=web_share",
   },
+
+  {
+    title: "Finderzz - Worker  App.",
+    description: "A worker/Professional app(Client) of Finderzz ecosystem.",
+    image: Finderzz ,
+    github: "https://github.com/Zayed022/Finderzz---Home-Services-Delivered",
+    live: "https://play.google.com/store/apps/details?id=com.finderzz.worker&pcampaignid=web_share",
+  },
+  
   {
     title: "Grokart Mobile App",
     description: "A mobile app of Grokart - A quick commerce application.",
@@ -33,6 +45,30 @@ const projects = [
     github: "https://github.com/Zayed022/Dairy-Shop-App-",
     live: "https://play.google.com/store/apps/details?id=com.dairyshopapp&pcampaignid=web_share",
   },
+  {
+    title: "Alexis Hospital Website",
+    description: "Website of a hospital(client) to generate leads and increase sales.",
+    image: Alexis,
+    github: "https://github.com/Zayed022/Alexis-Hospital",
+    live: "https://www.alexishospitalbhiwandi.com"
+
+  },
+  {
+    title: "Raadii Website",
+    description: "Website of a luxury perfume brand.",
+    image: Raadii,
+    github: "https://github.com/Zayed022/Raadi",
+    live: "https://www.raadii.in"
+
+  },
+  {
+    title: "SK Reality",
+    description: "A website of a construction firm in Lonavala.",
+    image: SK ,
+    github: "https://github.com/Zayed022/BuildStrong",
+    live: "https://skrealityconstruction.com/",
+  },
+
    {
     title: "AI Integrated Diet Plan Generator",
     description: "A final year project that generates diet based on user prefence and details",
